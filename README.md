@@ -1,12 +1,12 @@
-# TobaccoSwap UIkit
+# EpicSwap UIkit
 
-[![Version](https://img.shields.io/npm/v/@tobaccoswap/uikit)](https://www.npmjs.com/package/@tobaccoswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@tobaccoswap/uikit)](https://www.npmjs.com/package/@tobaccoswap/uikit)
+[![Version](https://img.shields.io/npm/v/@epicswap/uikit)](https://www.npmjs.com/package/@epicswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@epicswap/uikit)](https://www.npmjs.com/package/@epicswap/uikit)
 
 Pancake UIkit is a set of React components and hooks used to build pages on Pancake's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @tobaccoswap/uikit`
+`yarn add @epicswap/uikit`
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before using Pancake UIkit, you need to provide the theme file to styled-compone
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@tobaccoswap/uikit'
+import { light, dark } from '@epicswap/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@tobaccoswap/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@tobaccoswap/uikit'
+import { ResetCSS } from '@epicswap/uikit'
 ...
 <ResetCSS />
 ```
