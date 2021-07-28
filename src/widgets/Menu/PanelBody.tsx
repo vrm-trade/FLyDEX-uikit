@@ -31,8 +31,8 @@ const PanelBody: React.FC<Props> = ({ isPushed, pushNav, isMobile, links }) => {
   return (
     <Container>
       {links.map((entry) => {
-        const Icon = Icons[entry.icon];
-        const iconElement = <Icon width="24px" mr="8px" />;
+        const Icon = entry.icon ? Icons[entry.icon] : undefined;
+        const iconElement = Icon ? <Icon width="24px" mr="8px" /> : undefined;
         const calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
 
         if (entry.items) {
