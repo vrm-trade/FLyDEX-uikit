@@ -1,12 +1,12 @@
 # EpicSwap UIkit
 
-[![Version](https://img.shields.io/npm/v/@epicswap/uikit)](https://www.npmjs.com/package/@epicswap/uikit) [![Size](https://img.shields.io/bundlephobia/min/@epicswap/uikit)](https://www.npmjs.com/package/@epicswap/uikit)
+[![Version](https://img.shields.io/npm/v/flydex-uikit)](https://www.npmjs.com/package/flydex-uikit) [![Size](https://img.shields.io/bundlephobia/min/flydex-uikit)](https://www.npmjs.com/package/flydex-uikit)
 
 EpicSwap UIkit is a set of React components and hooks used to build pages on EpicSwap's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
-`yarn add @epicswap/uikit`
+`yarn add flydex-uikit`
 
 ## Setup
 
@@ -16,7 +16,7 @@ Before using Pancake UIkit, you need to provide the theme file to styled-compone
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@epicswap/uikit'
+import { light, dark } from 'flydex-uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
@@ -26,7 +26,7 @@ import { light, dark } from '@epicswap/uikit'
 A reset CSS is available as a global styled component.
 
 ```
-import { ResetCSS } from '@epicswap/uikit'
+import { ResetCSS } from 'flydex-uikit'
 ...
 <ResetCSS />
 ```

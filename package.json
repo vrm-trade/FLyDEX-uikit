@@ -1,5 +1,5 @@
 {
-  "name": "@epicswap/uikit",
+  "name": "flydex-uikit",
   "version": "0.10.15",
   "description": "Set of UI components for pancake projects",
   "main": "dist/index.cjs.js",

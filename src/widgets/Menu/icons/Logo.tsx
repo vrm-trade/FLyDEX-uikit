@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ isDark, ...props }) => {
       <image
         width="205"
         height="26"
-        href={isDark ? "/images/epic/LogoTextNewDark.png" : "/images/epic/LogoTextNewWhite.png"}
+        href={isDark ? "/images/fly/LogoTextNewDark.png" : "/images/fly/LogoTextNewWhite.png"}
       />
     </Svg>
   );
