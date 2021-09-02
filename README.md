@@ -1,8 +1,8 @@
-# EpicSwap UIkit
+# FLyDEX UIkit
 
 [![Version](https://img.shields.io/npm/v/flydex-uikit)](https://www.npmjs.com/package/flydex-uikit) [![Size](https://img.shields.io/bundlephobia/min/flydex-uikit)](https://www.npmjs.com/package/flydex-uikit)
 
-EpicSwap UIkit is a set of React components and hooks used to build pages on EpicSwap's apps. It also contains a theme file for dark and light mode.
+FLyDEX UIkit is a set of React components and hooks used to build pages on FLyDEX's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
