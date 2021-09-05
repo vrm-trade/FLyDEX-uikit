@@ -41,6 +41,8 @@ const MenuEntry = styled.div<Props>`
     align-items: center;
     width: 100%;
     height: 100%;
+    font-size: 10px;
+    font-weight: 500;
   }
 
   svg {
