@@ -120,7 +120,7 @@ var getColor = function (_a) {
 };
 var getFontSize = function (_a) {
     var fontSize = _a.fontSize, small = _a.small;
-    return small ? "14px" : fontSize || "16px";
+    return small ? "12px" : fontSize || "14px";
 };
 var Text = styled__default['default'].div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
     var bold = _a.bold;
@@ -837,16 +837,16 @@ var sizes$1 = {
 var _a;
 var style = (_a = {},
     _a[sizes$1.MD] = {
-        fontSize: "20px",
+        fontSize: "16px",
     },
     _a[sizes$1.LG] = {
-        fontSize: "24px",
+        fontSize: "18px",
     },
     _a[sizes$1.XL] = {
-        fontSize: "40px",
+        fontSize: "24px",
     },
     _a[sizes$1.XXL] = {
-        fontSize: "64px",
+        fontSize: "30px",
     },
     _a);
 var Heading = styled__default['default'](Text).attrs({ bold: true })(templateObject_1$g || (templateObject_1$g = __makeTemplateObject(["\n  ", "\n  font-weight:600;\n  line-height: 1.1;\n"], ["\n  ", "\n  font-weight:600;\n  line-height: 1.1;\n"])), function (_a) {
