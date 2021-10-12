@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://amm.tokenfly.co",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://amm.tokenfly.co/#/pool",
       },
     ],
   },
@@ -180,7 +180,7 @@ export const socials: {
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/epicswap1",
+    href: "https://twitter.com/FrankLinYield",
   },
   // {
   //   label: "Reddit",
