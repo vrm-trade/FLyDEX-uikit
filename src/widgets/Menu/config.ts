@@ -117,7 +117,7 @@ export const socials: {
   label: string;
   icon: string;
   href: string;
-  items?: { label: string; href: string; }[];
+  items?: { label: string; href: string }[];
 }[] = [
   // {
   //   label: "Telegram",
