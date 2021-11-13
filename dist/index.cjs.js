@@ -828,6 +828,7 @@ var tags = {
     H6: "h6",
 };
 var sizes$1 = {
+    SM: "sm",
     MD: "md",
     LG: "lg",
     XL: "xl",
@@ -836,6 +837,9 @@ var sizes$1 = {
 
 var _a;
 var style = (_a = {},
+    _a[sizes$1.SM] = {
+        fontSize: "12px",
+    },
     _a[sizes$1.MD] = {
         fontSize: "16px",
     },

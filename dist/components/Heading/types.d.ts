@@ -7,6 +7,7 @@ export declare const tags: {
     H6: string;
 };
 export declare const sizes: {
+    SM: string;
     MD: string;
     LG: string;
     XL: string;

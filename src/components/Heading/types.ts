@@ -8,6 +8,7 @@ export const tags = {
 };
 
 export const sizes = {
+  SM: "sm",
   MD: "md",
   LG: "lg",
   XL: "xl",
