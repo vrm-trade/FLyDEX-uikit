@@ -49,6 +49,30 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   }
 `;
 
+const InnerLeft = styled.div`
+  position: absolute;
+  top: 25%;
+  left: 0;
+  bottom: 1rem;
+  width: 60%;
+  background-color: rgba(9, 147, 236, 1);
+  filter: blur(150px);
+  border-radius: 9999px;
+`;
+const InnerRight = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  bottom: 25%;
+  width: 60%;
+  background-color: rgba(243, 56, 195, 1);
+  filter: blur(150px);
+  border-radius: 9999px;
+`;
+const InnerContent = styled.div`
+  position: relative;
+`;
+
 const MobileOnlyOverlay = styled(Overlay)`
   position: fixed;
   height: 100%;
@@ -141,7 +165,9 @@ const Menu: React.FC<NavProps> = ({
           priceLink={priceLink}
         />
         <Inner isPushed={isPushed} showMenu={showMenu}>
-          {children}
+          <InnerLeft />
+          <InnerRight />
+          <InnerContent>{children}</InnerContent>
         </Inner>
         <MobileOnlyOverlay show={isPushed} onClick={() => setIsPushed(false)} role="presentation" />
       </BodyWrapper>

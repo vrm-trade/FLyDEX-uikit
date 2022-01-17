@@ -2727,7 +2727,10 @@ var Inner = styled__default['default'].div(templateObject_4$3 || (templateObject
     var isPushed = _a.isPushed;
     return (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px";
 });
-var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var InnerLeft = styled__default['default'].div(templateObject_5$1 || (templateObject_5$1 = __makeTemplateObject(["\n  position: absolute;\n  top: 25%;\n  left: 0;\n  bottom: 1rem;\n  width: 60%;\n  background-color: rgba(9, 147, 236, 1);\n  filter: blur(150px);\n  border-radius: 9999px;\n"], ["\n  position: absolute;\n  top: 25%;\n  left: 0;\n  bottom: 1rem;\n  width: 60%;\n  background-color: rgba(9, 147, 236, 1);\n  filter: blur(150px);\n  border-radius: 9999px;\n"])));
+var InnerRight = styled__default['default'].div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  position: absolute;\n  top: 1rem;\n  right: 0;\n  bottom: 25%;\n  width: 60%;\n  background-color: rgba(243, 56, 195, 1);\n  filter: blur(150px);\n  border-radius: 9999px;\n"], ["\n  position: absolute;\n  top: 1rem;\n  right: 0;\n  bottom: 25%;\n  width: 60%;\n  background-color: rgba(243, 56, 195, 1);\n  filter: blur(150px);\n  border-radius: 9999px;\n"])));
+var InnerContent = styled__default['default'].div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
+var MobileOnlyOverlay = styled__default['default'](Overlay)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -2777,10 +2780,13 @@ var Menu = function (_a) {
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
-            React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
+            React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu },
+                React__default['default'].createElement(InnerLeft, null),
+                React__default['default'].createElement(InnerRight, null),
+                React__default['default'].createElement(InnerContent, null, children)),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1;
+var templateObject_1$H, templateObject_2$f, templateObject_3$8, templateObject_4$3, templateObject_5$1, templateObject_6, templateObject_7, templateObject_8;
 
 var ToastAction = function (_a) {
     var action = _a.action;
