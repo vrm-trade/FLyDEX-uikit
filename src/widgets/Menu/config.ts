@@ -10,11 +10,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://amm.tokenfly.co",
+        href: "https://amm.swapdao.io",
       },
       {
         label: "Liquidity",
-        href: "https://amm.tokenfly.co/#/pool",
+        href: "https://amm.swapdao.io/#/pool",
       },
     ],
   },
